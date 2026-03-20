@@ -53,11 +53,12 @@ retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
    List* LAux = create_list();
-   int suma = 0;
-   while (Front(L) != -1){
-      suma+=Front(L);
-      PushBack(LAux, Front(L));
-      PopFront(L);
+   int suma = 0, dato = Front(L);
+   while (dato != -1){
+      suma+=dato;
+      pushBack(LAux, Front(L));
+      popFront(L);
+      dato = Front(L);
    }
    return suma;
 }
