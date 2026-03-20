@@ -125,3 +125,17 @@ Fri Mar 20 06:08:12 PM UTC 2026:
  tests:  2|3
 total_score: 20/70
 4ecfdce
+Fri Mar 20 06:25:12 PM UTC 2026: 
+ exercises.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:55:25: error: implicit declaration of function ‘Front’ [-Wimplicit-function-declaration]
+   55 |    int suma = 0, elem = Front(L);
+      |                         ^~~~~
+exercises.c:58:14: error: implicit declaration of function ‘Next’; did you mean ‘next’? [-Wimplicit-function-declaration]
+   58 |       elem = Next(L);
+      |              ^~~~
+      |              next
+b3711b6
