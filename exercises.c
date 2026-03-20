@@ -54,14 +54,14 @@ retorne la suma de sus elementos.
 int sumaLista(List *L) {
    List* LAux = create_list();
    int suma = 0;
-   void* dato = Front(L);
+   int* dato = Front(L);
    while (dato != -1){
       suma+=dato;
       pushBack(LAux, dato);
       popFront(L);
       dato = Front(L);
    }
-   return suma;
+   return 0;
 }
 
 /*

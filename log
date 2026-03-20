@@ -98,3 +98,24 @@ exercises.c:62:12: error: assignment to ‘void *’ from ‘int’ makes pointe
       |            ^
 cc1: all warnings being treated as errors
 5b7760d
+Fri Mar 20 06:03:33 PM UTC 2026: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:57:16: error: implicit declaration of function ‘Front’ [-Wimplicit-function-declaration]
+   57 |    int* dato = Front(L);
+      |                ^~~~~
+exercises.c:57:16: error: initialization of ‘int *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+exercises.c:58:16: error: comparison between pointer and integer [-Werror]
+   58 |    while (dato != -1){
+      |                ^~
+exercises.c:59:11: error: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Wint-conversion]
+   59 |       suma+=dato;
+      |           ^~
+exercises.c:62:12: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+   62 |       dato = Front(L);
+      |            ^
+cc1: all warnings being treated as errors
+92cfe5f
