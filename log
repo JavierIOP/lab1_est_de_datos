@@ -2,3 +2,16 @@ Fri Mar 20 05:38:40 PM UTC 2026:
  tests:  0|5
 total_score: 0/70
 778e465
+Fri Mar 20 05:46:44 PM UTC 2026: 
+ exercises.c | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:85:20: error: expected ‘;’ before ‘while’
+   85 |    dato = pop(PAux)
+      |                    ^
+      |                    ;
+   86 |    while (dato != NULL){
+      |    ~~~~~            
+9c90453
