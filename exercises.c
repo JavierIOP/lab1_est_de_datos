@@ -52,7 +52,14 @@ Crea una función que reciba una lista de enteros (int*) y
 retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
-   return 0;
+   List* LAux = create_list();
+   int suma = 0;
+   while (Front(L) != -1){
+      suma+=Front(L);
+      PushBack(LAux, Front(L));
+      PopFront(L);
+   }
+   return suma;
 }
 
 /*
