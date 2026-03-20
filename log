@@ -77,3 +77,24 @@ arraylist.h:20:30: note: expected ‘void *’ but argument is of type ‘int’
    20 | void pushBack(List *L, void *dato);
       |                        ~~~~~~^~~~
 9a75c76
+Fri Mar 20 06:02:06 PM UTC 2026: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:57:17: error: implicit declaration of function ‘Front’ [-Wimplicit-function-declaration]
+   57 |    void* dato = Front(L);
+      |                 ^~~~~
+exercises.c:57:17: error: initialization of ‘void *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+exercises.c:58:16: error: comparison between pointer and integer [-Werror]
+   58 |    while (dato != -1){
+      |                ^~
+exercises.c:59:11: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Wint-conversion]
+   59 |       suma+=dato;
+      |           ^~
+exercises.c:62:12: error: assignment to ‘void *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+   62 |       dato = Front(L);
+      |            ^
+cc1: all warnings being treated as errors
+5b7760d
