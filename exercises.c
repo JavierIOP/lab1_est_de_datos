@@ -52,15 +52,6 @@ Crea una función que reciba una lista de enteros (int*) y
 retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
-   List* LAux = create_list();
-   int suma = 0;
-   int* dato = Front(L);
-   while (dato != -1){
-      suma+=dato;
-      pushBack(LAux, dato);
-      popFront(L);
-      dato = Front(L);
-   }
    return 0;
 }
 
@@ -74,7 +65,7 @@ posiciona en el elemento anterior.
 */
 
 void eliminaElementos(List*L, int elem){
-
+   
 }
 
 /*

@@ -119,3 +119,9 @@ exercises.c:62:12: error: assignment to ‘int *’ from ‘int’ makes pointer
       |            ^
 cc1: all warnings being treated as errors
 92cfe5f
+Fri Mar 20 06:08:12 PM UTC 2026: 
+ exercises.c | 9 ---------
+ 1 file changed, 9 deletions(-)
+ tests:  2|3
+total_score: 20/70
+4ecfdce
