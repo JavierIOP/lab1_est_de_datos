@@ -56,7 +56,7 @@ int sumaLista(List *L) {
    int suma = 0, dato = Front(L);
    while (dato != -1){
       suma+=dato;
-      pushBack(LAux, Front(L));
+      pushBack(LAux, dato);
       popFront(L);
       dato = Front(L);
    }
