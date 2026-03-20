@@ -139,3 +139,16 @@ exercises.c:58:14: error: implicit declaration of function ‘Next’; did you m
       |              ^~~~
       |              next
 b3711b6
+Fri Mar 20 06:25:45 PM UTC 2026: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:55:25: error: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Wint-conversion]
+   55 |    int suma = 0, elem = first(L);
+      |                         ^~~~~
+exercises.c:58:12: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Wint-conversion]
+   58 |       elem = next(L);
+      |            ^
+20bbc0f
