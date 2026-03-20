@@ -15,3 +15,9 @@ exercises.c:85:20: error: expected ‘;’ before ‘while’
    86 |    while (dato != NULL){
       |    ~~~~~            
 9c90453
+Fri Mar 20 05:47:12 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|4
+total_score: 10/70
+f57eeb8
