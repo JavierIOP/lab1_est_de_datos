@@ -291,3 +291,17 @@ exercises.c:121:23: error: comparison between pointer and integer [-Werror]
       |                       ^~
 cc1: all warnings being treated as errors
 3494a9a
+Mon Mar 23 12:31:21 AM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:120:11: error: invalid type argument of unary ‘*’ (have ‘int’)
+  120 |       if (*cadena[i] == '(') push(pila, &cadena[i]);
+      |           ^~~~~~~~~~
+exercises.c:121:23: error: comparison between pointer and integer [-Werror]
+  121 |       else if (cadena == ')'){
+      |                       ^~
+cc1: all warnings being treated as errors
+7035a88
