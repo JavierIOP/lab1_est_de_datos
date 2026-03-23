@@ -230,3 +230,14 @@ exercises.c:48:12: error: unused variable ‘numero’ [-Werror=unused-variable]
       |            ^~~~~~
 cc1: all warnings being treated as errors
 dc70ec2
+Mon Mar 23 12:03:40 AM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:50:19: error: ‘num’ undeclared (first use in this function)
+   50 |       pushBack(L, num);
+      |                   ^~~
+exercises.c:50:19: note: each undeclared identifier is reported only once for each function it appears in
+3af1e21
