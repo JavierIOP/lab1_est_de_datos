@@ -280,3 +280,14 @@ Mon Mar 23 12:14:38 AM UTC 2026:
  tests:  4|1
 total_score: 50/70
 8c9868b
+Mon Mar 23 12:30:27 AM UTC 2026: 
+ exercises.c | 20 ++++++++++++++++++++
+ 1 file changed, 20 insertions(+)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:121:23: error: comparison between pointer and integer [-Werror]
+  121 |       else if (cadena == ')'){
+      |                       ^~
+cc1: all warnings being treated as errors
+3494a9a
