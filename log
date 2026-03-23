@@ -185,3 +185,18 @@ Fri Mar 20 06:31:45 PM UTC 2026:
  tests:  2|3
 total_score: 20/70
 ad100a1
+Mon Mar 23 12:02:48 AM UTC 2026: 
+ exercises.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:49:8: error: ‘num’ undeclared (first use in this function)
+   49 |       *num = i;
+      |        ^~~
+exercises.c:49:8: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:48:12: error: unused variable ‘numero’ [-Werror=unused-variable]
+   48 |       int* numero = malloc(sizeof(int));
+      |            ^~~~~~
+cc1: all warnings being treated as errors
+2917fc9
