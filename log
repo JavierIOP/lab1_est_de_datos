@@ -241,3 +241,9 @@ exercises.c:50:19: error: ‘num’ undeclared (first use in this function)
       |                   ^~~
 exercises.c:50:19: note: each undeclared identifier is reported only once for each function it appears in
 3af1e21
+Mon Mar 23 12:03:54 AM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  3|2
+total_score: 30/70
+cbfc9a7
